@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="learnTestNGParameters.DataProvider_CreateLead">
+      <class name="stepsDefinition.TestRunner">
         <methods>
-          <include name="login"/>
-          <include name="createLead"/>
-          <include name="closeBrowser"/>
+          <include name="runScenario" invocation-numbers="2"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- learnTestNGParameters.DataProvider_CreateLead -->
+      </class> <!-- stepsDefinition.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

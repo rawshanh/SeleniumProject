@@ -19,14 +19,19 @@ public class OpenChromeBrowser {
 		//Maximize window
 		driver.manage().window().maximize();
 		
+		
+		
 		//implicitly wait
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		//Load/enter URL		
+		//Load/enter URL
+		
+	//	driver.get("google.com");
 		
 		driver.get("http://leaftaps.com/opentaps/control/main");
+		driver.findElementById("username").sendKeys("DemoSalesManager");
 	
-		driver.findElementById("username").sendKeys("DemoCSR");
+	/*	driver.findElementById("username").sendKeys("DemoCSR");
 		driver.findElementByName("PASSWORD").sendKeys("crmsfa");
 		
 		//click Login button
@@ -39,9 +44,9 @@ public class OpenChromeBrowser {
 		
 		driver.findElementByLinkText("Create Ac").click();
 		
-		/*WebElement Country = driver,fin
+		WebElement Country = driver,fin
 		Select dd1 = new Select(Country);
-		dd1.selectByVisibleText("Thailand");*/
+		dd1.selectByVisibleText("Thailand");
 		
 		WebElement Country = driver.findElementByClassName("tableheadtext");
 		Select dd3 = new Select(Country);
@@ -55,7 +60,7 @@ public class OpenChromeBrowser {
 		
 		
 		//close browser
-		driver.close();
+		driver.close(); */
 			
 		
 		

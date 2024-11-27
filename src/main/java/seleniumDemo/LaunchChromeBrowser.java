@@ -1,5 +1,7 @@
 package seleniumDemo;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LaunchChromeBrowser {
@@ -25,6 +27,9 @@ public class LaunchChromeBrowser {
 		//System.out.println(driver.getTitle());
 			String title = driver.getTitle();
 			System.out.println(title);
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.findElementById(""
 		
 
 	}

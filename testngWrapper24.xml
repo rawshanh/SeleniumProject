@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="c_10C_XPath_Practice24.EditLead24"/>
+      <class name="c_10C_XPath_Practice24.CreateLead24"/>
+      <class name="c_10C_XPath_Practice24.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

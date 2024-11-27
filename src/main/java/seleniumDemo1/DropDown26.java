@@ -23,10 +23,12 @@ public class DropDown26 {
 		driver.findElementByClassName("decorativeSubmit").click();
 		driver.findElementByLinkText("CRM/SFA").click();
 		driver.findElementByLinkText("Create Lead").click();
+		driver.findElementById("createLeadForm_dataSourceId");
+		
 		WebElement src = driver.findElementById("createLeadForm_dataSourceId");
 		Select dd = new Select(src);
 		
-		//WebElement src=  driver.findElementById("createLeadForm_dataSourceId");
+	//WebElement src=  driver.findElementById("createLeadForm_dataSourceId");
 		// Create object of Select class and pass the variable (src)
 		
 		//Select dd = new Select(src);
@@ -39,6 +41,6 @@ public class DropDown26 {
 		//2nd way
 		dd.selectByValue("LEAD_WORDOFMOUTH");
 		//3rcd way
-	    //dd.selectByIndex(6);	
+	    //dd.selectByIndex(6);	*/
 	}
 	}

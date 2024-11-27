@@ -39,7 +39,7 @@ public class JavaScriptAlertsSCP {
 		driver.close(); */
 		
 		//PromptAlert
-		driver.findElementByXPath("")
+	//	driver.findElementByXPath("")
 		
 		
 		

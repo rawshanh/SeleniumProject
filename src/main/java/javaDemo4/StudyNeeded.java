@@ -4,7 +4,7 @@ public class StudyNeeded {
 
 	public static void main(String[] args) {
 		
-		mba();
+		//mba();
 		
 		
 	}
